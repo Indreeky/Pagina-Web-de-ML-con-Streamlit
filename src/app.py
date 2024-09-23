@@ -5,8 +5,9 @@ from PIL import Image
 import numpy as np
 import os
 
-# Cargar el modelo
-MODEL_PATH = os.path.join('src', 'model_transfer.keras')  # Ajustar la ruta al modelo
+# Ajustar la ruta del modelo usando la ruta absoluta
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'model_transfer.keras')
 model = load_model(MODEL_PATH)
 
 # Estilizar la aplicación
