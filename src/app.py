@@ -6,7 +6,7 @@ import numpy as np
 import os
 
 # Cargar el modelo
-MODEL_PATH = os.path.join(os.getcwd(), 'src', 'model_transfer.keras')
+MODEL_PATH = os.path.join('src', 'model_transfer.keras')  # Ajustar la ruta al modelo
 model = load_model(MODEL_PATH)
 
 # Estilizar la aplicación
