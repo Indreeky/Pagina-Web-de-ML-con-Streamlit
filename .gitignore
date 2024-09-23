@@ -1,3 +1,54 @@
-__pycache__
+# Ignorar entornos virtuales
+.venv/
+env/
+venv/
+
+# Ignorar archivos de caché y temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar archivos de configuración de desarrollo local
+*.env
+*.env.local
+*.env.*.local
 .env
-.learn
+.env.example
+
+# Ignorar configuraciones locales del editor y otros IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar archivos de Log
+*.log
+*.txt
+
+# Ignorar archivos relacionados con Jupyter y notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Ignorar archivos subidos y descargados por el usuario
+descargas/
+uploads/
+
+# Ignorar configuraciones y cachés de TensorFlow
+*.pb
+*.h5
+checkpoint
+*.keras
+
+# Ignorar archivos temporales de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de Streamlit generados temporalmente
+.streamlit/
+
+# Incluir el archivo del modelo
+!src/model_transfer.keras
+
+# Archivos ignorados comúnmente
+*.bak
+*.swp
